@@ -1,0 +1,12 @@
+
+.AccountEdit {
+    
+}
+
+.list {
+    transition: 200ms all;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+

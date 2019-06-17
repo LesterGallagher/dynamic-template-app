@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "question": "Vraag 3",
+      "answer": "<strong>Antwoord 3<br><img src=\"/uploads/logo.png\"></strong>"
+    },
+    {
+      "template": "faq-question",
+      "question": "Vraag 1",
+      "answer": "Antwoord 1 test",
+      "auteur": "",
+      "title": "Vraag 1",
+      "description": "Antwoord 1"
+    },
+    {
+      "template": "faq-question",
+      "question": "Vraag 2",
+      "answer": "Antwoord 2",
+      "auteur": "",
+      "title": "Vraag 2",
+      "description": "Antwoord 2"
+    }
+  ]
+}

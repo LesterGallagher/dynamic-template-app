@@ -1,0 +1,16 @@
+
+
+.firstListItem {
+    background-size: cover;
+}
+
+.list:global(.list--material) {
+    font-weight: 500;
+}
+
+.list:global(.list--material) ons-icon {
+    width: 40px;
+    color: #777;
+    font-size: 22px;
+}
+

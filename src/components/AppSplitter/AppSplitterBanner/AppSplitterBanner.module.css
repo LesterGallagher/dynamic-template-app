@@ -1,0 +1,14 @@
+
+.AppSplitterBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.avatar {
+    height: 100px;
+    border-radius: 1000px;
+    width: 100px;
+}
+
