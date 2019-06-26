@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "./static/js/main.f5298b02.chunk.js"
   },
   {
-    "revision": "0e4c7c4946c392429062",
-    "url": "./static/js/runtime~main.0e4c7c49.js"
+    "revision": "54585f2801d2b5caef1e",
+    "url": "./static/js/runtime~main.54585f28.js"
   },
   {
     "revision": "a0c0cafd2cf230bdf868af7ffd8335b3",
@@ -32,16 +32,16 @@ self.__precacheManifest = [
     "url": "./static/js/4.5c117b09.chunk.js"
   },
   {
-    "revision": "83e6c29fb363b2f0ea6cc18fefff729c",
-    "url": "./static/media/fa-brands-400.83e6c29f.svg"
+    "revision": "de1d242d8acb26ec43c0d071fe78e72d",
+    "url": "./static/media/fa-solid-900.de1d242d.svg"
   },
   {
     "revision": "c6364e9ea511c9fe3722",
     "url": "./static/js/5.c6364e9e.chunk.js"
   },
   {
-    "revision": "de1d242d8acb26ec43c0d071fe78e72d",
-    "url": "./static/media/fa-solid-900.de1d242d.svg"
+    "revision": "83e6c29fb363b2f0ea6cc18fefff729c",
+    "url": "./static/media/fa-brands-400.83e6c29f.svg"
   },
   {
     "revision": "b2dbc2b809369e149293",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "./static/media/ionicons.aff28a20.svg"
   },
   {
-    "revision": "7bf947e4015dbb8ba7c5",
-    "url": "./static/js/7.7bf947e4.chunk.js"
+    "revision": "2f600088139c37ca5477",
+    "url": "./static/js/7.2f600088.chunk.js"
   },
   {
     "revision": "dd4781d1acc57ba4c4808d1b44301201",
@@ -396,7 +396,7 @@ self.__precacheManifest = [
     "url": "./static/css/8.6b36006c.chunk.css"
   },
   {
-    "revision": "7bf947e4015dbb8ba7c5",
+    "revision": "2f600088139c37ca5477",
     "url": "./static/css/7.e99fb9ed.chunk.css"
   },
   {
@@ -416,7 +416,7 @@ self.__precacheManifest = [
     "url": "./static/css/main.ee59ccf3.chunk.css"
   },
   {
-    "revision": "7a0545e31958451dbe264d200f2e9249",
+    "revision": "c81f9d6f0806c4bc40c06502c51ca84b",
     "url": "./index.html"
   }
 ];
