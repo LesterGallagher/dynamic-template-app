@@ -44,16 +44,16 @@ self.__precacheManifest = [
     "url": "./static/js/5.fc7fd140.chunk.js"
   },
   {
+    "revision": "ad538a69b0e8615ed0419c4529344ffc",
+    "url": "./static/media/Roboto-Thin.ad538a69.woff2"
+  },
+  {
     "revision": "d26871e8149b5759f814fd3c7a4f784b",
     "url": "./static/media/Roboto-Light.d26871e8.woff2"
   },
   {
     "revision": "73f0a88bbca1bec19fb1303c689d04c6",
     "url": "./static/media/Roboto-Regular.73f0a88b.woff2"
-  },
-  {
-    "revision": "ad538a69b0e8615ed0419c4529344ffc",
-    "url": "./static/media/Roboto-Thin.ad538a69.woff2"
   },
   {
     "revision": "90d1676003d9c28c04994c18bfd8b558",
@@ -196,16 +196,16 @@ self.__precacheManifest = [
     "url": "./static/media/Material-Design-Iconic-Font.b351bd62.ttf"
   },
   {
+    "revision": "e8019d507e8cb51d169ab4f94a0cda12",
+    "url": "./static/media/fa-brands-400.e8019d50.eot"
+  },
+  {
     "revision": "fdf44bc43e8fa2358bbb7d9165d78455",
     "url": "./static/media/fa-brands-400.fdf44bc4.ttf"
   },
   {
     "revision": "19e65b89cee273a249fba4c09b951b74",
     "url": "./static/media/ionicons.19e65b89.eot"
-  },
-  {
-    "revision": "e8019d507e8cb51d169ab4f94a0cda12",
-    "url": "./static/media/fa-brands-400.e8019d50.eot"
   },
   {
     "revision": "ba2a91dc95e6cfdc4b2a186a7ba83e29",
