@@ -22,10 +22,10 @@ class GenericPage extends Component {
             appPage: {
                 appKey,
                 frontmatter: {
-                    title
+                    title,
+                    layout
                 },
                 id,
-                isHomePage,
                 markdown,
                 uid
             }
@@ -50,10 +50,10 @@ class GenericPage extends Component {
             appPage: {
                 appKey,
                 frontmatter: {
-                    title
+                    title,
+                    layout
                 },
                 id,
-                isHomePage,
                 markdown,
                 uid
             }

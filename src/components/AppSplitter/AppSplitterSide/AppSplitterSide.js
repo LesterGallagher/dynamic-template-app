@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Splitter, SplitterContent, SplitterSide, Page, List, Icon, ListHeader, ListItem, ListTitle } from 'react-onsenui';
 import styles from './AppSplitterSide.module.css';
-import { APP_SPLITTER_ROUTES } from '../../../constants/app-splitter'
 import AppSplitterBanner from '../AppSplitterBanner/AppSplitterBanner';
 import headerBg from './edges.svg';
 import { withRouter } from 'react-router-dom';

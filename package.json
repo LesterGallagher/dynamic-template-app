@@ -1,8 +1,9 @@
 {
-  "name": "projectmegaindia",
+  "name": "dynamic-template-app",
   "version": "0.1.1",
   "private": true,
   "license": "UNLICENSED",
+  "homepage": "./",
   "dependencies": {
     "algoliasearch": "^3.33.0",
     "date-fns": "^2.0.0-alpha.27",
@@ -10,12 +11,10 @@
     "firebase": "^5.8.5",
     "gh-pages": "^2.0.1",
     "google-maps-react": "^2.0.2",
-    "i": "^0.3.6",
     "jimp": "^0.6.0",
     "lodash": "^4.17.11",
     "material-ui-search-bar": "^0.4.2",
     "moment": "^2.24.0",
-    "npm": "^6.9.0",
     "onsenui": "^2.10.8",
     "onsenui-react-redux-navigator": "git+https://github.com/karlvr/onsenui-react-redux-navigator.git",
     "query-string": "^6.4.2",

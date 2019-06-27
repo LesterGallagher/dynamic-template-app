@@ -9,7 +9,7 @@ import { appId, adminId } from '../config';
 
 // Initialize Firebase
 // Your web app's Firebase configuration
-var config = {
+export const config = {
     apiKey: "AIzaSyCaS8dXhdbJcUcYQIdyIyXdNZYCWkzpxrk",
     authDomain: "dynamic-template-app.firebaseapp.com",
     databaseURL: "https://dynamic-template-app.firebaseio.com",

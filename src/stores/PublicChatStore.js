@@ -1,7 +1,7 @@
 import { ChatMeta } from "../lib/chats/chat-meta";
 import { ChatThread } from "../lib/chats/chat-thread";
 import AbstractChatStore from "./AbstractChatStore";
-import firebase from '../lib/firebase';
+import firebase, { config } from '../lib/firebase';
 import AuthStore from "./AuthStore";
 import { parseQuery } from "../lib/util";
 import { adminId, appId } from "../config";
@@ -21,9 +21,14 @@ class PublicChatStore extends AbstractChatStore {
     }
 
     chatMetaIds = (async () => {
-        const response = await fetch(`https://megaindia-990a4.firebaseio.com/users/${adminId}/apps/${appId}/chats/public.json?shallow=true`);
+        const response = await fetch(`${config.databaseURL}/users/${adminId}/apps/${appId}/chats/public.json?shallow=true`);
         const json = await response.json();
-        return Object.keys(json);
+
+        const map = typeof json !== 'object' && json !== null 
+            ? json 
+            : {}
+
+        return Object.keys(map);
     })();
 
     getChatMetaItem = slug => {

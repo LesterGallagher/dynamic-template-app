@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ons from 'onsenui';
+import * as ons from 'onsenui';
 import { register } from 'timeago.js';
 import nlLocale from 'timeago.js/lib/lang/nl';
 import { HashRouter as Router } from 'react-router-dom';
@@ -19,10 +19,10 @@ import AppPublicStore from '../../stores/AppPublicStore';
 import Helmet from 'react-helmet';
 import getStyle from '../../lib/dynamic-app-utils/css-components-loader'
 import { parseQuery } from '../../lib/util';
-import { isIPhoneX, platform } from '../../config';
+import { device, platform } from '../../config';
 moment.locale('nl');
 
-if (ons.platform.isIPhoneX() || isIPhoneX === 'true') { // Utility function
+if (ons.platform.isIPhoneX() || device === 'device-iphone-x') { // Utility function
   // Add empty attribute to the <html> element
   document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
 }
@@ -82,6 +82,9 @@ class App extends Component {
       isAuthenticated: this.state.isAuthenticated,
       userHasAuthenticated: this.state.userHasAuthenticated
     };
+
+    console.log('HAS AUTHENTICATED', this.state.userHasAuthenticated)
+    console.log('IS AUTHENTICATED', this.state.isAuthenticated, this.state.isAuthenticated && AuthStore.user.uid)
 
     return (
       <FirebaseContext.Provider value={firebase}>

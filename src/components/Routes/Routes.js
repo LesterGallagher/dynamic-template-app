@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter, match } from 'react-router-dom';
 import './Routes.css';
 
 import AppSplitter from '../AppSplitter/AppSplitter';
@@ -31,25 +31,7 @@ import AppPagesStore from '../../stores/AppPagesStore';
 import Loading from '../Loading/Loading';
 import GenericPage from '../GenericPage/GenericPage';
 
-const Introduction = asyncComponent(() => import('../Introduction/Introduction'));
-const NoEntry = asyncComponent(() => import('../NoEntry/NoEntry'));
-const NewRouteOrder = asyncComponent(() => import('../NewRouteOrder/NewRouteOrder'));
-const Home = asyncComponent(() => import('../Home/Home'));
-const RoutesOffersOverview = asyncComponent(() => import('../RoutesOffersOverview/RoutesOffersOverview'));
-const RouteDetail = asyncComponent(() => import('../RouteDetail/RouteDetail'));
-const PublicChat = asyncComponent(() => import('../PublicChat/PublicChat'));
-const PersonalChat = asyncComponent(() => import('../PersonalChat/PersonalChat'));
-const PersonalChatsOverview = asyncComponent(() => import('../PersonalChatsOverview/PersonalChatsOverview'));
 const NotFound = asyncComponent(() => import('../NotFound/NotFound'));
-const RouteOfferFlowDiagram = asyncComponent(() => import('../RouteOfferFlowDiagram/RouteOfferFlowDiagram'));
-const AccountPage = asyncComponent(() => import('../AccountPage/AccountPage'));
-const PersonalProfilePage = asyncComponent(() => import('../PersonalProfilePage/PersonalProfilePage'));
-const ProfilePage = asyncComponent(() => import('../ProfilePage/ProfilePage'));
-const FAQPage = asyncComponent(() => import('../FAQPage/FAQPage'));
-const FAQQuestionPage = asyncComponent(() => import('../FAQPage/FAQQuestionPage/FAQQuestionPage'));
-const ForumPage = asyncComponent(() => import('../ForumPage/ForumPage'));
-const AboutPage = asyncComponent(() => import('../AboutPage/AboutPage'));
-const SettingsPage = asyncComponent(() => import('../SettingsPage/SettingsPage'));
 
 class Routes extends Component {
     constructor(props) {
@@ -73,7 +55,7 @@ class Routes extends Component {
             appPagesLoading: AppPagesStore.loading,
             appPages: AppPagesStore.appPages
         });
-        console.log(AppPagesStore.appPages);
+        console.log('APP_PAGES_CHANGE', AppPagesStore.appPages, 'LOADING', AppPagesStore.loading);
     }
 
     render() {
@@ -82,23 +64,27 @@ class Routes extends Component {
         if (this.state.appPagesLoading) return <Loading />
 
         return (
-            <Switch>
-                {this.state.appPages.map(appPage => {
-                    const path = AppPagesStore.createPageUrl(appPage);
-                    return (
-                        <AppliedRoute exact
-                            childProps={childProps}
-                            key={path}
-                            path={path}
-                            component={
-                                () => <AppSplitter><GenericPage appPage={appPage} /></AppSplitter>
-                            } />
-                    );
-                })}
-                <AppliedRoute component={NotFound} />
-            </Switch>
+            <div>
+                <Switch>
+                    {this.state.appPages.map(appPage => {
+                        const path = AppPagesStore.createPageUrl(appPage);
+                        console.log('ROUTES PATH', path, this.props.location.pathname, appPage);
+                        return (
+                            <AppliedRoute exact
+                                childProps={childProps}
+                                key={path}
+                                path={path}
+                                component={
+                                    () => <AppSplitter><GenericPage appPage={appPage} /></AppSplitter>
+                                } />
+                        );
+                    })}
+                    <AppliedRoute component={NotFound} />
+                </Switch>
+            </div>
+
         );
     }
 }
 
-export default Routes;
+export default withRouter(Routes);
